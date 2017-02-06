@@ -1,0 +1,101 @@
+body {
+    animation: color-change 30s infinite;
+     background-color:#7FD1B9;
+     color: red;
+}
+
+a {
+
+  color: #00B7FF;
+}
+
+.sun{
+    animation: sun-move 30s infinite;
+    /*animation: sun-change 30s infinite;*/
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background-color:yellow;
+    text-align:center;
+    line-height:4;
+    top:0;
+    position:absolute;
+}
+
+.sun2{
+    animation: sun-change 30s infinite;
+    /*animation: sun-change 30s infinite;*/
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background-color:yellow;
+    text-align:center;
+    line-height:4;
+    top:0;
+    position:absolute;
+
+}
+
+.grass{
+    background-color: green;
+}
+
+.text{
+    text-align:center;
+
+  padding: 50px;
+  font: 100px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  /*color:#DE6E4B;*/
+  color: black;
+   /*color: #00B7FF;*/
+   text-shadow: 5px 5px #258EA6;
+   margin-top: 17%;
+    animation: shadows 30s infinite;
+
+}
+/*h1{
+    transform: rotateX(180deg);
+    transition: 3s infinite;
+}*/
+@keyframes sun-move {
+    0%   {transform: translate(300px, 100px)}
+    /*12%   {transform: translate(800px, 200px)}*/
+    25%  {transform: translate(1500px, 0px)}
+    50%  {transform: translate(1500px, 700px)}
+    75%  {transform: translate(300px, 700px)}
+    100%  {transform: translate(300px, 100px)}
+}
+
+@keyframes sun-change {
+    0%   {background-color:yellow}
+    25%  {background-color:yellow}
+    50%  {background-color:orange}
+    75%  {background-color:white}
+    100%  {background-color:yellow}
+}
+
+
+@keyframes shadows {
+    0%   {text-shadow: 5px 5px #254E70;}
+    25%  {text-shadow: -5px 5px #254E70;}
+    50%  {text-shadow: -5px -5px #254E70;}
+    75%  {text-shadow: 0px 0px #254E70;}
+    100%  {text-shadow: 5px 5px #254E70;}
+}
+
+@keyframes color-change {
+    0%   {background-color:#7FD1B9;}
+    25%  {background-color:#FFC09F;}
+    50%  {background-color:#FFEE93;}
+    75%  {background-color:#254E70;}
+    100%  {background-color:#7FD1B9}
+}
+
+.input{
+    animation: color-change 30s infinite;
+    border:5px outset #00B7FF ;
+    margin-left:10px;
+    height:20px;
+    width:200px;
+}
