@@ -37,7 +37,9 @@ a {
 }
 
 .grass{
-    background-color: green;
+    background-color: lightgreen;
+    height:300px;
+    width:100%;
 }
 
 .text{
@@ -49,7 +51,7 @@ a {
   /*color:#DE6E4B;*/
   color: black;
    /*color: #00B7FF;*/
-   text-shadow: 5px 5px #258EA6;
+   text-shadow: 5px 5px black;
    margin-top: 17%;
     animation: shadows 30s infinite;
 
